@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/edit/<%= product._id %>?_method=patch" method="post">
+        PName:
+        <input type="text" name="pname" id="" value="<%= product.pname %>"><br>
+        Image:
+        <input type="text" name="image" id="" value="<%= product.image %>"><br>
+        Price:
+        <input type="text" name="price" id="" value="<%= product.price %>"><br>
+        Category:
+        <input type="text" name="category" id="" value="<%= product.category %>"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
